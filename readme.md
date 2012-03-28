@@ -21,7 +21,7 @@ All methods are throwable and you should wrap API-calls to try-catch blocks
 		'2012-11-04T11:00', 
 		'api_test'
 	);
-	$acc->invitePeopleToMeeting($meeting_id, 'sc0rp10@yandex.kz');
+	$acc->inviteUserToMeeting($meeting_id, 'sc0rp10@yandex.kz');
 ---
 ###Contacts
 * <dev@weblab.pro>

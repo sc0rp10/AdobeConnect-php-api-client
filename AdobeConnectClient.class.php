@@ -57,7 +57,7 @@ class AdobeConnectClient {
 	 *
 	 */
 	public function __construct () {
-		$this->cookie = sys_get_temp_dir().DIRECTORY_SEPARATOR.'cookie_'.time().'.txt'; // вынести в параметр
+		$this->cookie = sys_get_temp_dir().DIRECTORY_SEPARATOR.'cookie_'.time().'.txt';
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 		curl_setopt($ch, CURLOPT_REFERER, self::BASE_DOMAIN);
